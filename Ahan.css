@@ -1,0 +1,88 @@
+
+#box{
+    padding: 5px; 
+    height: 750px; 
+    width:750px;
+    background-color:rgb(2,3,34) ;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  
+}
+#FirstInsideBox{
+    height: 720px; 
+    width: 720;
+    padding: 8px; 
+    background-image: linear-gradient(yellow, red);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-1.2deg);
+
+}
+#SecondInsideBox{
+    height: 690px;
+    width: 690px; 
+    padding: 8px; 
+    background: linear-gradient(90deg, #0e1629 50%, #000720 50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   position: relative;
+   transform: rotate(+1.2deg)
+}
+#SecondInsideBox .button{
+    left: 5%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, top 0.5s, opacity 0.5s linear;
+}
+#SecondInsideBox:hover .button{
+    visibility: visible;
+    opacity: 1;
+    top: 90%;
+}
+#image{
+    background: url(numero-01-png.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+.button{
+    border: 2px solid white;
+    font-size: 12 px;
+    width: 90 px;
+    height: 30px;
+    position: absolute;
+    font-family: sans-serif;
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding: 6 px;
+}
+
+.button p{
+    margin-top:7px;
+}
+
+#content{
+    position: absolute;
+    top:30%;
+    font-size: medium;
+    font-family: sans-serif;
+    color: white;
+    bottom:5%;
+    left:5%;
+}
